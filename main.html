@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do </title>
+</head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<body>
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <!-- Container wrapper -->
+    <div class="container">
+      <!-- Navbar brand -->
+      <a class="navbar-brand me-2" href="https://mdbgo.com/">
+        <img
+          src="data:image/jpeg;base64,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"
+          height="50"
+          alt="MDB Logo"
+          loading="lazy"
+          style="margin-top: -1px;"
+        />
+      </a>
+  
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarButtonsExample"
+        aria-controls="navbarButtonsExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarButtonsExample">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#" ><b>TO DO</b></a>
+          </li>
+        </ul>
+        <!-- Left links -->
+  
+        <div class="d-flex align-items-center">
+          <button type="button" class="btn btn-danger px-3 me-2">
+            <a href="index.html" target="_blank">LOG OUT</a> 
+          </button>
+          <button type="button" class="btn btn-primary me-3"onclick="changedata()">
+            TO DO
+
+          </button>
+          
+        </div>
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+  <table id ="tbl">
+
+  </table>
+  <script src="ajax.js"></script>
+</body>
+</html>
